@@ -109,7 +109,7 @@ def index_message_checkpoints(checkpoint_file: str = str(CHECKPOINT_OUTPUT)):
     store.add_documents(docs)
     print(f"Indexed {len(docs)} message checkpoints into Chroma.")
 
-def index_raw_message_chunks(checkpoint_file: str = str(RAW_CHUNKS_OUTPUT)):
+def index_raw_message_chunks():
 
     messages = load_all_messages(str(CSV_PATH))
 
