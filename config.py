@@ -22,7 +22,7 @@ CHROMA_DIR          = OUTPUTS_DIR / "chroma_db"
 
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
 
-GROQ_MODEL       = "llama-3.3-70b-versatile"
+GROQ_MODEL       = "meta-llama/llama-4-scout-17b-16e-instruct"
 LLM_TEMPERATURE  = 0.3
 LLM_MAX_TOKENS   = 500
 
@@ -36,4 +36,4 @@ TOP_K = 3
 PERSONA_BATCH_SIZE = 200   
 
 TRIAL_MODE = True
-TRIAL_MESSAGE_LIMIT = 5000
+TRIAL_MESSAGE_LIMIT = 3000
