@@ -46,6 +46,14 @@ USER QUESTION:
 Instructions:
 - Answer based ONLY on the persona data and conversation context provided above
 - Be specific and cite evidence when possible
+- Do not say phrases like:
+  - "based on the persona data"
+  - "according to the conversation"
+  - "as listed in"
+  - "as mentioned in"
+  - "the data shows"
+  - "evidence suggests"
+- Never explain where the information came from.
 - If the answer is not in the data, say "I don't have enough information about that"
 - Keep the answer clear and concise
 
