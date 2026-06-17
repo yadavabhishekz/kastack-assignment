@@ -57,7 +57,7 @@ def detect_topics(messages):
     topics = []
     
     WINDOW_SIZE = 5
-    MIN_TOPIC_SIZE = 100
+    MIN_TOPIC_SIZE = 50
     
     current_topic_messages = messages[:WINDOW_SIZE]
     current_start = 1  

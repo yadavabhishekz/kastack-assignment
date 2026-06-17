@@ -16,6 +16,7 @@ OUTPUTS_DIR    = ROOT_DIR / "outputs"
 CSV_PATH            = DATA_DIR / "conversations.csv"
 TOPIC_OUTPUT        = OUTPUTS_DIR / "topic_checkpoints.json"
 CHECKPOINT_OUTPUT   = OUTPUTS_DIR / "checkpoint_100.json"
+RAW_CHUNKS_OUTPUT   = OUTPUTS_DIR / "raw_chunks.json"
 PERSONA_OUTPUT      = OUTPUTS_DIR / "persona.json"
 CHROMA_DIR          = OUTPUTS_DIR / "chroma_db"
 
@@ -36,4 +37,4 @@ TOP_K = 3
 PERSONA_BATCH_SIZE = 200   
 
 TRIAL_MODE = True
-TRIAL_MESSAGE_LIMIT = 3000
+TRIAL_MESSAGE_LIMIT = 5000

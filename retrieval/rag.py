@@ -12,6 +12,7 @@ from config import (
     TOPIC_OUTPUT,
     CHECKPOINT_OUTPUT,
     TOP_K,
+    RAW_CHUNKS_OUTPUT
 )
 from topic_detection.detector import load_all_messages
 from config import CSV_PATH
@@ -108,7 +109,7 @@ def index_message_checkpoints(checkpoint_file: str = str(CHECKPOINT_OUTPUT)):
     store.add_documents(docs)
     print(f"Indexed {len(docs)} message checkpoints into Chroma.")
 
-def index_raw_message_chunks():
+def index_raw_message_chunks(checkpoint_file: str = str(RAW_CHUNKS_OUTPUT)):
 
     messages = load_all_messages(str(CSV_PATH))
 

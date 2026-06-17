@@ -15,7 +15,7 @@ from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 
 
-from retrieval.rag import retrieve, build_context_string, index_topic_summaries, index_message_checkpoints
+from retrieval.rag import retrieve, build_context_string, index_topic_summaries, index_message_checkpoints,index_raw_message_chunks
 
 
 
@@ -73,6 +73,7 @@ def load_indexes():
     
     index_topic_summaries()
     index_message_checkpoints()
+    index_raw_message_chunks()
     return True
 
 

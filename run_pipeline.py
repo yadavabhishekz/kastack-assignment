@@ -21,44 +21,42 @@ from retrieval.rag import (
 
 
 def main():
-    print("=" * 60)
+   
     print("STEP 1: Load all messages from CSV")
-    print("=" * 60)
     messages = load_all_messages(str(CSV_PATH))
 
-    print("\n" + "=" * 60)
     print("STEP 2: Detect topic segments")
-    print("=" * 60)
+
     topics = detect_topics(messages)
 
-    print("\n" + "=" * 60)
+
     print("STEP 3: Summarize each topic segment (calls LLM)")
-    print("=" * 60)
+
     topics_with_summaries = summarize_topics(topics)
     save_topics(topics_with_summaries, str(TOPIC_OUTPUT))
 
-    print("\n" + "=" * 60)
+
     print("STEP 4: Create 100-message checkpoints (calls LLM)")
-    print("=" * 60)
+
     checkpoints = create_100_message_checkpoints(messages)
     save_checkpoints(checkpoints, str(CHECKPOINT_OUTPUT))
 
-    print("\n" + "=" * 60)
+
     print("STEP 5: Extract user persona (calls LLM)")
-    print("=" * 60)
+
     build_persona(str(CSV_PATH))
 
-    print("\n" + "=" * 60)
+
     print("STEP 6: Index everything into ChromaDB")
-    print("=" * 60)
+
     index_topic_summaries(TOPIC_OUTPUT)
     index_message_checkpoints(CHECKPOINT_OUTPUT)
     index_raw_message_chunks()
 
-    print("\n" + "=" * 60)
+
     print("!!!!!!Pipeline complete!!!!!!!!!")
     print("Now run: streamlit run chatbot/app.py")
-    print("=" * 60)
+
 
 
 if __name__ == "__main__":
