@@ -93,6 +93,28 @@ Example:
 
 # Screenshots and Demo
 
+
+## Topic Checkpoints
+
+![Topic Checkpoints](demo/Topic1.png)
+![Topic Checkpoints](demo/Topic2.png)
+
+## 100 Message Checkpoints
+
+![Checkpoints](demo/100msg.png)
+![Checkpoints](demo/100msg2.png)
+
+## Persona Extraction
+
+![Persona](demo/persona1.png)
+![Persona](demo/persona2.png)
+
+## Chatbot Demo
+
+![Chatbot](demo/image1.png)
+![Chatbot](demo/image2.png)
+
+
 ---
 
 # Video Demo (Loom)
