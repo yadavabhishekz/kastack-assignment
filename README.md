@@ -112,7 +112,7 @@ Example:
 ## Chatbot Demo
 
 ![Chatbot](Demo/image1.png)
-![Chatbot](Demo/image2.png)
+![Chatbot](Demo/image.png)
 
 
 ---
