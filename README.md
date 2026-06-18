@@ -33,6 +33,69 @@ streamlit run chatbot/app.py
 
 ---
 
+## Project Structure
+
+```text
+project/
+│
+├── chatbot/
+│   ├── app.py                     # Streamlit chatbot interface
+│   └── __init__.py
+│
+├── data/
+│   └── conversations.csv          # Raw conversation dataset
+│
+├── topic_detection/
+│   ├── detector.py                # Topic detection pipeline
+│   ├── summarizer.py              # Topic summarization logic
+│   └── __init__.py
+│
+├── persona/
+│   ├── persona_builder.py         # User persona generation
+│   └── __init__.py
+│
+├── retrieval/
+│   ├── rag.py                     # RAG retrieval pipeline
+│   └── __init__.py
+│
+├── outputs/
+│   ├── chroma_db/                 # Chroma vector database
+│   │   └── chroma.sqlite3
+│   ├── checkpoint_100.json        # Processing checkpoints
+│   ├── topic_checkpoints.json     # Topic extraction results
+│   └── persona.json               # Generated persona output
+│
+├── Demo/
+│   ├── image.png
+│   ├── image1.png
+│   ├── 100msg.png
+│   ├── 100msg2.png
+│   ├── persona1.png
+│   ├── persona2.png
+│   ├── Topic1.png
+│   └── Topic2.png                 # Demo screenshots
+│
+├── config.py                      # Project configuration
+├── run_pipeline.py                # Main pipeline runner
+├── requirements.txt               # Dependencies
+├── .env.example                   # Environment variable template
+└── README.md
+```
+---
+
+### Module Overview
+
+| Module | Purpose |
+|----------|----------|
+| **Topic Detection** | Identifies major discussion topics from conversation history. |
+| **Topic Summarization** | Generates concise summaries for detected topics. |
+| **Persona Builder** | Creates a structured user persona from conversation patterns. |
+| **RAG Retrieval** | Builds and queries a vector database for semantic search. |
+| **Chatbot** | Interactive Streamlit chatbot powered by retrieved context. |
+| **Outputs** | Stores generated personas, checkpoints, and vector database files. |
+
+---
+
 # How Topic Changes Are Detected
 
 Conversations are processed in chronological order, message by message.
