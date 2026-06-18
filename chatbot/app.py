@@ -73,7 +73,6 @@ def load_indexes():
     
     index_topic_summaries()
     index_message_checkpoints()
-    index_raw_message_chunks()
     return True
 
 

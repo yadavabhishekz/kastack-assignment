@@ -28,7 +28,7 @@ python run_pipeline.py
 ## Start Chatbot
 
 ```bash
-streamlit run app.py
+streamlit run chatbot/app.py
 ```
 
 ---

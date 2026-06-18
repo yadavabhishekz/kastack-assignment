@@ -15,7 +15,6 @@ OUTPUTS_DIR    = ROOT_DIR / "outputs"
 
 CSV_PATH            = DATA_DIR / "conversations.csv"
 TOPIC_OUTPUT        = OUTPUTS_DIR / "topic_checkpoints.json"
-CHECKPOINT_OUTPUT   = OUTPUTS_DIR / "checkpoint_100.json"
 RAW_CHUNKS_OUTPUT   = OUTPUTS_DIR / "raw_chunks.json"
 PERSONA_OUTPUT      = OUTPUTS_DIR / "persona.json"
 CHROMA_DIR          = OUTPUTS_DIR / "chroma_db"

@@ -170,8 +170,7 @@ def build_persona(csv_path: str = CSV_PATH, output_path: str = OUTPUT_PATH) -> d
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(final_persona, f, indent=2, ensure_ascii=False)
 
-    print(f"\nPersona saved → {output_path}")
-    print(json.dumps(final_persona, indent=2))
+    
     return final_persona
 
 
