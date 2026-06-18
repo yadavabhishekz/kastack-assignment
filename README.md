@@ -96,23 +96,23 @@ Example:
 
 ## Topic Checkpoints
 
-![Topic Checkpoints](demo/Topic1.png)
-![Topic Checkpoints](demo/Topic2.png)
+![Topic Checkpoints](Demo/Topic1.png)
+![Topic Checkpoints](Demo/Topic2.png)
 
 ## 100 Message Checkpoints
 
-![Checkpoints](demo/100msg.png)
-![Checkpoints](demo/100msg2.png)
+![Checkpoints](Demo/100msg.png)
+![Checkpoints](Demo/100msg2.png)
 
 ## Persona Extraction
 
-![Persona](demo/persona1.png)
-![Persona](demo/persona2.png)
+![Persona](Demo/persona1.png)
+![Persona](Demo/persona2.png)
 
 ## Chatbot Demo
 
-![Chatbot](demo/image1.png)
-![Chatbot](demo/image2.png)
+![Chatbot](Demo/image1.png)
+![Chatbot](Demo/image2.png)
 
 
 ---
